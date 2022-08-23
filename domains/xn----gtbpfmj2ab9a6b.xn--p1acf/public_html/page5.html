@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head lang="ru">
+    <title>Поприветствуйте Кота!</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="чудный кот, Кот-полиглот, чудо-кот"/>  
+	<meta name="keywords" content="чудный-кот.рус, чудный кот, забавный кот, смешной кот, кошка, коты, кошки, красивые коты, пушистые коты"/>   
+	<link href="favicon.ico" rel="shotcut icon" type="image/x icon"/>  
+	<link type="text/css" rel="stylesheet" href="css/main.css" />  
+	<!--<script src="jquery-3.5.1.min.js"></script>-->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TXNB9J7');</script>
+<!-- End Google Tag Manager -->
+
+   <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(65101573, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/65101573" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+	<script>
+		'use strict'
+		document.addEventListener('DOMContentLoaded', function (event) {
+			document.querySelector('button').addEventListener('click', function(event) {
+				let text = document.querySelector('textarea');
+				if (text.value.length == 0) alert ('Вы не ввели комментарий');
+				else {
+					document.querySelector('.answer').innerHTML = 'Его котейшество благодарит Вас! )))';
+					document.querySelector('img').src = 'images/red_cat2.gif'; 
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXNB9J7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<header>
+		<a href="index.html" title="Познакомьтесь с Котом">Его котейшество</a>
+		<a href="page2.html" title="Где можно найти Кота?">Чудные места</a>
+		<a href="page3.html" title="Поймай звезду - загадай желание">Славная игра</a>
+		<a href="page4.html" title="Чем же занимается Кот?">Важные дела</a>
+		<a href="page5.html" title="Напишите Коту">Поприветствуйте Кота</a>
+	</header>
+	<h1>Поприветствуйте Кота!</h1>
+	<div id="comments">
+		<div class="comment"></div>
+		<textarea name="text" placeholder="Напишите здесь что-нибудь приятное для Кота"></textarea>
+		<br />
+		<button id="hello" onclick=ym(65101573,'reachGoal','target')>Порадовать Кота</button>
+	</div>
+	<main>
+		<img />
+		<br />
+		<p class="answer"></p>
+	</main>
+	<footer>
+		<pre>Все права КОТА защищены
+		
+<i>by &copy;RiaBInina 2020</i></pre>
+	</footer>
+	
+	<script>
+		document.querySelector('#hello').style.color = 'red';
+		function changeColor() {
+			let digits = '0123456789abcdef';
+			let color = '#';
+			for (let i = 0; i < 6; i++) {
+				color += digits[Math.floor(Math.random() * 16)];
+			}
+			document.querySelector('#hello').style.color = color;
+			setTimeout(changeColor, 200);
+		}
+		changeColor();
+	</script>	
+	
+</body>
+</html>
