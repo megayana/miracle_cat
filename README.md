@@ -1,4 +1,4 @@
-# miracle_cat
+# Miracle_cat
 The code of the site miracle-cat (http://чудный-кот.рус)
 
 Сайт http://чудный-кот.рус я создала в июне 2020 года после обучения HTML, CSS и JavaScript на курсах от Михаила Русакова (https://myrusakov.ru/).
